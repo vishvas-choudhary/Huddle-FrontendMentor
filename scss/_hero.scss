@@ -1,0 +1,74 @@
+.hero {
+  text-align: center;
+  &__heading {
+    margin-bottom: 2.5rem;
+
+    @include breakpoint-down(small) {
+      margin-bottom: 3rem;
+      font-size: 2.8rem;
+    }
+  }
+
+  &__text {
+    max-width: 48rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    margin-bottom: 3.5rem;
+
+    @include breakpoint-down(small) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__link {
+    margin-bottom: 9rem;
+  }
+
+  &__image {
+    width: 85%;
+    margin-bottom: 9rem;
+
+    @include breakpoint-down(small) {
+      margin-bottom: 10rem;
+    }
+  }
+
+  &__box {
+    @include flex(space-around, center, row);
+    flex-wrap: wrap;
+
+    margin-bottom: 19rem;
+    @include breakpoint-down(small) {
+      margin-bottom: 11rem;
+    }
+
+    .hero__item1 {
+      flex: 1 0 20rem;
+      @include breakpoint-down(small) {
+        margin-bottom: 8.5rem;
+      }
+    }
+    .hero__item2 {
+      flex: 1 0 20rem;
+      @include breakpoint-down(small) {
+        margin-bottom: 8.5rem;
+      }
+    }
+
+    img {
+      width: 4rem;
+    }
+
+    h1 {
+      font-size: $font-xlarge;
+
+      @include breakpoint-down(small) {
+        font-size: 6rem;
+      }
+    }
+
+    p {
+      color: gray;
+    }
+  }
+}
